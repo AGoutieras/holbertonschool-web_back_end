@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Duplicate sequence elements according to a zoom factor."""
+"""Duplicate tuple elements according to a zoom factor."""
 
-from typing import Sequence, Any, List
+from typing import Tuple, List
 
 
-def zoom_array(lst: Sequence[Any], factor: int = 2) -> List[Any]:
-    """Return a list with each input item repeated by factor."""
-    zoomed_in: List[Any] = [
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """Return a list with each tuple item repeated by factor."""
+    zoomed_in: List = [
         item for item in lst
         for i in range(factor)
     ]
