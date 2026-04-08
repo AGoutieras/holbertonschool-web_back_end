@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Compute the sum of a list of floats."""
+
 from typing import List
 
 

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Create a function that multiplies by a given factor."""
+
 from typing import Callable
 
 

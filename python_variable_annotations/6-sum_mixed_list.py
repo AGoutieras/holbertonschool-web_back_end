@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Compute the sum of a mixed list of ints and floats."""
+
 from typing import List, Union
 
 

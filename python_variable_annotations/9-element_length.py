@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Pair each iterable element with its length."""
+
 from typing import Iterable, Sequence, List, Tuple
 
 

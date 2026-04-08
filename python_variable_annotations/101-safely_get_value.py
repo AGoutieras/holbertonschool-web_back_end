@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Get a mapping value by key, or return a default value."""
+
 from typing import TypeVar, Mapping, Any, Union
 T = TypeVar('T')
 

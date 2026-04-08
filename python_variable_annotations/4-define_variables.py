@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Define typed variables with simple values."""
+
 a: int = 1
 pi: float = 3.14
 i_understand_annotations: bool = True

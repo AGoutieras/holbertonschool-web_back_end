@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Duplicate tuple elements according to a zoom factor."""
+
 from typing import Tuple, List
 
 

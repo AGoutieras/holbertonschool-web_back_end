@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Return the first element of a sequence, or None if empty."""
+
 # The types of the elements of the input are not known
 from typing import Sequence, Any, Optional
 
