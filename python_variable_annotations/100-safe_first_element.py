@@ -6,6 +6,7 @@ from typing import Sequence, Any, Optional
 
 
 def safe_first_element(lst: Sequence[Any]) -> Optional[Any]:
+    """Return the first item if present, else None."""
     if lst:
         return lst[0]
     else:
