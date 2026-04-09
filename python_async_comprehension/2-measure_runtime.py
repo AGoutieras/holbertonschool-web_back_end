@@ -12,5 +12,5 @@ async def measure_runtime():
     start = time()
     calls = [async_comprehension() for _ in range(4)]
     await asyncio.gather(*calls)
-    end = time()
+    end = time.perf_counter()
     return end - start
