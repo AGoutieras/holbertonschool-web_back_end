@@ -14,14 +14,14 @@ tout en manipulant les annotations de type.
 
 ## Contenu du dossier
 
-| Fichier | Description |
-|---|---|
-| `0-basic_async_syntax.py` | Definit `wait_random(max_delay)` : attend un delai aleatoire puis retourne ce delai. |
+| Fichier                      | Description                                                                                                                            |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `0-basic_async_syntax.py`    | Definit `wait_random(max_delay)` : attend un delai aleatoire puis retourne ce delai.                                                   |
 | `1-concurrent_coroutines.py` | Definit `wait_n(n, max_delay)` : lance `n` coroutines `wait_random` en parallele et retourne les delais tries par ordre de completion. |
-| `2-measure_runtime.py` | Definit `measure_time(n, max_delay)` : mesure le temps moyen d'execution par coroutine. |
-| `3-tasks.py` | Definit `task_wait_random(max_delay)` : retourne une `asyncio.Task` pour `wait_random`. |
-| `4-tasks.py` | Definit `task_wait_n(n, max_delay)` : version de `wait_n` basee sur des taches. |
-| `tests/` | Scripts de verification pour chaque exercice (`0-main.py` a `4-main.py`). |
+| `2-measure_runtime.py`       | Definit `measure_time(n, max_delay)` : mesure le temps moyen d'execution par coroutine.                                                |
+| `3-tasks.py`                 | Definit `task_wait_random(max_delay)` : retourne une `asyncio.Task` pour `wait_random`.                                                |
+| `4-tasks.py`                 | Definit `task_wait_n(n, max_delay)` : version de `wait_n` basee sur des taches.                                                        |
+| `tests/`                     | Scripts de verification pour chaque exercice (`0-main.py` a `4-main.py`).                                                              |
 
 ## Arborescence
 
