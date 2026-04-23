@@ -15,5 +15,6 @@ if __name__ == "__main__":
         count = collection.count_documents({"method": method})
         print("\tmethod {}: {}".format(method, count))
 
-    status = collection.find({"method": "GET", "path": "/status"}).count()
+    status = collection.count_documents(
+        {"method": "GET", "path": "/status"}).count()
     print("{} status check".format(status))
