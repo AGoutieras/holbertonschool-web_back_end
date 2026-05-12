@@ -11,10 +11,14 @@ app.get('/', (req, res) => {
 app.get('/students', (req, res) => {
   countStudents(database)
     .then((result) => {
+      res.writeHead(200, { 'Content-Type': 'text/plain' });
       res.send(`This is the list of our students\n${result}`);
+    })
+    .catch(() => {
+      res.status(500).send('This is the list of our students\nCannot load the database');
     });
 });
 
-app.listen(port, 'localhost');
+app.listen(port);
 
 module.exports = app;
