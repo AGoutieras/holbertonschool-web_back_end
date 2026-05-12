@@ -1,10 +1,11 @@
-import router from './routes/index'
-import express from 'express'
-const app = express()
-const port = 1245
+import express from 'express';
+import router from './routes/index';
 
-app.use(router)
+const app = express();
+const port = 1245;
 
-app.listen(1245, 'localhost')
+app.use(router);
 
-export default app
+app.listen(port, 'localhost');
+
+export default app;

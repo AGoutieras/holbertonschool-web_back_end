@@ -1,12 +1,13 @@
-import express from 'express'
-import AppController from '../controllers/AppController'
-import StudentsController from '../controllers/StudentsController'
-const router = express.Router()
+import express from 'express';
+import AppController from '../controllers/AppController';
+import StudentsController from '../controllers/StudentsController';
 
-router.get('/', AppController.getHomepage)
+const router = express.Router();
 
-router.get('/students', StudentsController.getAllStudents)
+router.get('/', AppController.getHomepage);
 
-router.get('/students/:major', StudentsController.getAllStudentsByMajor)
+router.get('/students', StudentsController.getAllStudents);
 
-export default router
+router.get('/students/:major', StudentsController.getAllStudentsByMajor);
+
+export default router;
