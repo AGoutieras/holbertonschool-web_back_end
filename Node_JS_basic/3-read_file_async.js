@@ -19,9 +19,9 @@ function countStudents(path) {
           fields[field].push(student);
         });
         Object.keys(fields).forEach((key) => {
-          result += `Number of students in ${key}: ${fields[key].length}. List: ${fields[key].join(', ')}\n`;
+          result += `Number of students in ${key}: ${fields[key].length}. List: ${fields[key].join(', ')}`;
         });
-        resolve(result);
+        resolve(result.trim());
       }
     });
   });
