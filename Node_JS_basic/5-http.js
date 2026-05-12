@@ -42,7 +42,7 @@ const app = http.createServer((req, res) => {
       })
       .catch(() => {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
-        res.end('Cannot load the database');
+        res.end('This is the list of our students\nCannot load the database');
       });
   }
 });
