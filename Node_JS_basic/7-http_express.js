@@ -1,9 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 
-const database = process.argv[2];
 const app = express();
-const port = 1245;
 
 function countStudents(path) {
   return new Promise((resolve, reject) => {
@@ -36,16 +34,18 @@ app.get('/', (req, res) => {
   res.send('Hello Holberton School!');
 });
 app.get('/students', (req, res) => {
+  const database = process.argv[2];
   countStudents(database)
     .then((result) => {
-      res.writeHead(200, { 'Content-Type': 'text/plain' });
+      res.set('Content-Type', 'text/plain');
       res.send(`This is the list of our students\n${result}`);
     })
     .catch(() => {
-      res.status(500).send('This is the list of our students\nCannot load the database');
+      res.set('Content-Type', 'text/plain');
+      res.send('This is the list of our students\nCannot load the database');
     });
 });
 
-app.listen(port);
+app.listen(1245);
 
 module.exports = app;
